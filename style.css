@@ -1,0 +1,25 @@
+:root{--bg:#050606;--accent:#00e676;--muted:#9aa0a6}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#000,#071218);color:#e6eef1;font-family:Inter,system-ui,Roboto,Arial}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid rgba(255,255,255,0.03)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:48px;height:48px;border-radius:8px}
+.brand h1{color:var(--accent);margin:0;font-size:20px}
+.url-input{display:flex;align-items:center;gap:8px}
+.url-input input{width:420px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:#e6eef1}
+.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:7px 10px;border-radius:8px;color:var(--muted);cursor:pointer}
+.player-area{max-width:1100px;margin:18px auto;padding:12px}
+.player-wrap{background:#000;border-radius:8px;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+.video-js{width:100%;height:60vh;max-height:760px}
+.controls-row{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:12px}
+.meta{font-weight:700}
+.menus{display:flex;gap:8px;align-items:center}
+.menu{display:flex;gap:6px;align-items:center}
+.menu .btn{padding:6px 8px;font-size:14px}
+.desc{color:var(--muted);margin-top:10px}
+.foot{text-align:center;color:var(--muted);padding:18px}
+@media (max-width:720px){
+  .url-input input{width:160px}
+  .video-js{height:40vh}
+  .menus{flex-wrap:wrap}
+}
