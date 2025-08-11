@@ -1,0 +1,7 @@
+name = "filmzii-worker"
+main = "worker.js"
+compatibility_date = "2025-08-11"
+workers_dev = true
+
+[vars]
+# nothing required here for the simple proxy
